@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container-sm{
+  background-color:transparent;
+  max-width: 30rem;
+  padding: 1rem;
+  margin-top: 10rem;
+}
+button{
+  border: 2px solid black;
+  font-weight: bolder;
+  border-radius: 5px;
+  height: 2.3rem;
+  font-size: larger;
+  text-align: center;
+}
+body{
+  background-color: black;
+}
+.input-group button{
+  font-weight: bolder;
+  background-color:deepskyblue;
+  color: black;
+  font-size: large;
+  height: 50px; width: 3rem;
+}
+.input-group input{
+font-weight: bolder;
+      text-align: center ; color:darkviolet; font-size: 18px;
+}
+.list-group .fa-trash{
+  background-color: yellow;
+  color: red;
+}
+.list-group .fa-pen-to-square{
+  color:blue
+}
+
+.list-group li{
+      font-weight: bolder;
+      text-align: center;
+      font-size: 18px;
+      color:brown;
+}
+
+li:hover{
+  background-color: aqua;
+  color: black;
+}
+
