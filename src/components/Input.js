@@ -3,11 +3,21 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Input() {
+
+    const getItems=()=>{
+    let items = localStorage.getItem("list");
+    return JSON.parse(items);
+    }
+    
     const [Value, setValue] = useState("");
-    const [Fvalue, setFvalue] = useState([]);
+   const [Fvalue, setFvalue] = useState(getItems());
     const [Toggle, setToggle] = useState(false);
     const [editedVal, seteditedVal] = useState(null);
     const notify = () => toast("😂Empty Text😂");
+
+    useEffect(()=>{
+    localStorage.setItem("list" , JSON.stringify(Fvalue))
+    },[Fvalue])
 
     const Add = () => {
         if (!Value) {
